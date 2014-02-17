@@ -39,4 +39,4 @@ $string['pluginname_help'] = 'In response to a question (that may include a imag
 $string['pluginname_link'] = 'question/type/fwstructmatch';
 $string['pluginnameadding'] = 'Adding a structure match question';
 $string['pluginnameediting'] = 'Editing a structure match question';
-$string['pluginnamesummary'] = 'Allows a response of a drawn chemical structure that is graded by comparing against various model answers, with our without stereochemistry.';
+$string['pluginnamesummary'] = 'Allows a response of a drawn chemical structure that is graded by comparing against various model answers, with or without stereochemistry.';
