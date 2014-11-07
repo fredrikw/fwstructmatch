@@ -37,6 +37,8 @@ class qtype_fwstructmatch_renderer extends qtype_renderer {
     public function formulation_and_controls(question_attempt $qa,
             question_display_options $options) {
 
+        // $PAGE->requires->css('/question/type/fwstructmatch/cwc/uis/jquery-ui-1.10.3.custom.css');
+
         $question = $qa->get_question();
         $currentanswer = $qa->get_last_qt_var('answer');
 
@@ -114,10 +116,9 @@ class qtype_fwstructmatch_renderer extends qtype_renderer {
         $topnode = 'div.que.fwstructmatch#q'.$qa->get_slot();
         $name = $toreplaceid . '_editor';
         // Maybe not the most elegant way, but at least it's working...
-        $PAGE->requires->js('/question/type/fwstructmatch/cwc/ChemDoodleWeb-libs.js');
-        $PAGE->requires->js('/question/type/fwstructmatch/cwc/ChemDoodleWeb.js');
-        $PAGE->requires->js('/question/type/fwstructmatch/cwc/sketcher/jquery-ui-1.9.2.custom.min.js');
-        $PAGE->requires->js('/question/type/fwstructmatch/cwc/sketcher/ChemDoodleWeb-sketcher.js');
+        // $PAGE->requires->js('/question/type/fwstructmatch/cwc/ChemDoodleWeb-libs.js');
+        $PAGE->requires->js('/question/type/fwstructmatch/cwc/ChemDoodleWeb-unpacked.js');
+        $PAGE->requires->js('/question/type/fwstructmatch/cwc/uis/ChemDoodleWeb-uis.js');
         $PAGE->requires->js_init_call('M.qtype_fwstructmatch.insert_cwc',
                                       array($toreplaceid,
                                             $name,

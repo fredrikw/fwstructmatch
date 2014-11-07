@@ -7,6 +7,14 @@
     width: 80%;
 }
 
+.que.fwstructmatch .answer input[type="radio"]+label {
+    display: inline-block;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+
 /* ChemDoodleWeb.css */
 canvas.ChemDoodleWebComponent {
 	border: 1px solid black;
