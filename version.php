@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qtype_fwstructmatch';
-$plugin->version   = 2013030100;
+$plugin->version   = 2014110700;
+$plugin->release   = 'v0.9';
+$plugin->requires  = 2014051200;
 
-$plugin->requires  = 2012112900;
-
-$plugin->maturity  = MATURITY_ALPHA;
+$plugin->maturity  = MATURITY_BETA;
